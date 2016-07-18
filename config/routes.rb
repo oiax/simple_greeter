@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'hello' => 'hello#show'
+  get 'hello(/:name)' => 'hello#show'
 end

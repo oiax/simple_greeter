@@ -1,5 +1,5 @@
 class HelloController < ApplicationController
   def show
-    @name = 'Alice'
+    @name = params[:name]|| 'world'
   end
 end
