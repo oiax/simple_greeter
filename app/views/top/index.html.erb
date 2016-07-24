@@ -1,5 +1,6 @@
 <%
   @document_title = "SimpleGreeter"
+  names = [ 'Alice', 'Bob', 'Charlie' ]
 %>
 <div class="jumbotron">
   <h1 class="display-3">SimpleGreeter</h1>
@@ -7,3 +8,8 @@
   <hr>
   <p><%= link_to 'このサイトについて', :about %></p>
 </div>
+<nav class="nav nav-inline">
+  <% names.each do |name| %>
+    <%= link_to name, hello_path(name: name), class: 'nav-link' %>
+  <% end %>
+</nav>
