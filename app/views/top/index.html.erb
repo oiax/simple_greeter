@@ -9,6 +9,7 @@
   <p><%= link_to 'このサイトについて', :about %></p>
 </div>
 <nav class="nav nav-inline text-center">
+  <%= link_to 'world', hello_path(name: nil), class: 'nav-link' %>
   <% names.each do |name| %>
     <%= link_to name, hello_path(name: name), class: 'nav-link' %>
   <% end %>

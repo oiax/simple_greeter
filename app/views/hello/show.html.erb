@@ -1,9 +1,11 @@
 <%
   @document_title = "SimpleGreeter (#{@name})"
+  image_file_name = params[:name] ? 'robot.svg' : 'nasa_earth.jpg'
+  image_alt_text = params[:name] ? 'Robot' : 'Earth'
 %>
 <div class="card m-a-0">
   <div class="text-xs-center">
-    <%= image_tag 'robot.svg', alt: 'Robot',
+    <%= image_tag image_file_name, alt: image_alt_text,
       style: 'width: 100%; max-width: 320px' %>
   </div>
   <div class="card-block card-inverse card-success">
