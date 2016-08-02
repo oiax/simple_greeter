@@ -2,14 +2,7 @@
   @document_title = "SimpleGreeter"
   names = %w(Alice Bob Charlie)
 %>
-<div class="jumbotron">
+<div class="jumbotron m-a-1">
   <h1 class="display-3">SimpleGreeter</h1>
   <p class="lead">SimpleGreeterへようこそ！</p>
-  <hr>
-  <p><%= link_to 'このサイトについて', :about %></p>
 </div>
-<nav class="nav nav-inline text-xs-center">
-  <% names.each do |name| %>
-    <%= link_to name, hello_path(name: name), class: 'nav-link' %>
-  <% end %>
-</nav>
