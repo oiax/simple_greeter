@@ -5,4 +5,11 @@
 <div class="jumbotron m-a-1">
   <h1 class="display-3">SimpleGreeter</h1>
   <p class="lead">SimpleGreeterへようこそ！</p>
+  <hr>
+  <p><%= link_to 'このサイトについて', :about %></p>
 </div>
+<nav class="nav nav-inline">
+  <% names.each do |name| %>
+    <%= link_to name, hello_path(name: name), class: 'nav-link' %>
+  <% end %>
+</nav>
