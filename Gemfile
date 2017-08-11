@@ -44,6 +44,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'bootstrap', '= 4.0.0.alpha6'
+gem 'bootstrap', '= 4.0.0.beta'
 gem 'tether-rails'
 gem 'font-awesome-sass'
